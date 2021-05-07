@@ -6,7 +6,8 @@ function Feeling () {
     const [feeling, setFeeling] = useState(0);
     const history = useHistory();
     const onSubmit = (event) => {
-        dispatch({type: 'ADD_FEELING', payload: {feeling: feeling}})
+        console.log('clicked', feeling);
+        dispatch({type: 'ADD_FEELING', payload: Number(feeling)})
         history.push('/understanding');
     }
 

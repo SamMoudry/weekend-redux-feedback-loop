@@ -12,7 +12,22 @@ const feedback = (state = [], action) => {
         case 'ADD_FEELING':
             return {
                 ...state,
-                feeling: action.feeling
+                feeling: action.payload
+            }
+        case 'ADD_UNDERSTANDING':
+            return {
+                ...state,
+                understanding: action.payload
+            }
+        case 'ADD_SUPPORTED':
+            return {
+                ...state,
+                supported: action.payload
+            }
+        case 'ADD_COMMENTS':
+            return {
+                ...state,
+                comments: action.payload
             }
     }
 
