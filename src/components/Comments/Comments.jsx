@@ -8,7 +8,7 @@ function Comments () {
     const onSubmit = (event) => {
         console.log('clicked', comments);
         dispatch({type: 'ADD_COMMENTS', payload: comments})
-        history.push('/feeling');
+        history.push('/review');
     }
 
     return(
