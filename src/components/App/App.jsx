@@ -6,7 +6,8 @@ import Feeling from '../Feeling/Feeling.jsx';
 import Understanding from '../Understanding/Understanding.jsx';
 import Supported from '../Supported/Supported.jsx';
 import Comments from '../Comments/Comments.jsx';
-import Review from '../Review/Review.jsx'
+import Review from '../Review/Review.jsx';
+import Refresh from '../Refresh/Refresh.jsx';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/supported" component={Supported} />
         <Route exact path="/comments" component={Comments} />
         <Route exact path="/review" component={Review} />
+        <Route exact path="/refresh" component={Refresh} />
       </Router>
     </div>
   );

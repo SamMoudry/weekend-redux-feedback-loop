@@ -15,7 +15,7 @@ function Review () {
             }
         }).then((response) => {
             console.log(response);
-            history.push('/');
+            history.push('/refresh');
         }).catch((err) => {
             console.log(err);
         })

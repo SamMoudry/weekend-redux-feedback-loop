@@ -29,6 +29,14 @@ const feedback = (state = [], action) => {
                 ...state,
                 comments: action.payload
             }
+        case 'CLEAR':
+            return {
+                ...state,
+                feeling: action.payload,
+                understanding: action.payload,
+                supported: action.payload,
+                comments: action.payload
+            }
     }
 
     return state;
